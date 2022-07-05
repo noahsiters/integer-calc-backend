@@ -1,6 +1,5 @@
 var express = require('express');
 var app = express();
-var PORT = 8080;
 
 /*app.get('/calc', (req, res) => {
     res.status(200).send({
@@ -40,6 +39,6 @@ app.get('/', function (req, res) {
     res.send('hello world!')
 })
 
-app.listen(PORT, function () {
+app.listen(process.env.PORT || 8080, function () {
     console.log('currently running calculator API')
 })
