@@ -1,12 +1,6 @@
 var express = require('express');
 var app = express();
 
-/*app.get('/calc', (req, res) => {
-    res.status(200).send({
-        message: 'ok'
-    })
-});*/
-
 app.get('/calc/:equation', function (req, res) {
     var equation = req.params.equation;
     var calculation = equation.match(/\d+|[^0-9]/g);
@@ -32,6 +26,7 @@ app.get('/calc/:equation', function (req, res) {
             }
         }
     }
+    res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.send(result.toString());
 })
 
