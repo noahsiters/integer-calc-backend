@@ -22,3 +22,5 @@ Should get you a result of:
 ```
 ### About
 This application was built using Node.js and the Express web app framework.
+
+The project for the front end React app that this API is connected to can be found at [github.com/noahsiters/integer-calc-frontend](https://github.com/noahsiters/integer-calc-frontend)
